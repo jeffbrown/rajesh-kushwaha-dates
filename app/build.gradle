@@ -1,0 +1,21 @@
+plugins {
+    id 'groovy'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.9'
+    implementation 'org.codehaus.groovy:groovy-dateutil:3.0.9'
+}
+
+application {
+    mainClass = 'rajesh.kushwaha.dates.App'
+}
+
+run {
+    standardInput = System.in
+}
